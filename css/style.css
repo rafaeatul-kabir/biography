@@ -1,0 +1,104 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    margin-bottom: 3em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex-item{
+    
+    padding: 0 1em;
+}
+h1,h2{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+}
+.display-photo{
+    max-height: 25em; 
+}
+.table-container{
+    overflow-x:auto;
+    text-align: center;
+}
+.footer-content{
+    background-color: white;
+    color: black;
+    margin-top: 1em;
+    padding: 5px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    text-align: center;
+}
+.web-content{
+    visibility: hidden;
+    position: absolute;
+}
+form{
+    /* padding: ; */
+}
+
+.contact-form{
+    padding: 1em;
+}
+form input, textarea{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+@media only screen and (min-width: 481px) {
+    
+    .biography{
+        text-align: left;
+    }
+    .mobile-content{
+        visibility: hidden;
+        position: absolute;
+    }
+    .web-content{
+        visibility: visible;
+        position: relative;
+    }
+    .flex{
+        flex-direction: row;
+        padding-top: 1em;
+    }
+    table{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    
+  }
+  @media screen and (min-width: 769px) {
+    
+    .display-photo{
+        max-height: 30em; 
+    }
+    td{
+        padding: 1em;
+    }
+    .flex{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    h2{
+        margin-bottom: 3em;
+    }
+  }
